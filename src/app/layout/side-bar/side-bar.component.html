@@ -1,0 +1,17 @@
+<div class="sidebar" data-color="green" data-background-color="black">
+    <div class="logo">
+      <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        Empty dashboard
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+        <li *ngFor="let route of routes" class="nav-item" routerLinkActive=" active">
+          <a class="nav-link" [routerLink]="route.path">
+            <i class="material-icons">{{route.data.icon}}</i>
+            <p>{{route.data.title}}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
