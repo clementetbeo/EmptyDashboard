@@ -7,7 +7,9 @@ import { SideBarComponent } from './layout/side-bar/side-bar.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ItemComponent } from './components/item/item.component';
+import {HttpClientModule} from '@angular/common/http'
 
+export const backendPath = 'http://localhost:3000';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ItemComponent } from './components/item/item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
